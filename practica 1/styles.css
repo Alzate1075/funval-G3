@@ -1,0 +1,22 @@
+.Ol {
+    color:rgb(104, 42, 1);
+    background-color:rgb(252, 212, 160);
+}
+
+.Ul {
+    background-color:rgb(252, 225, 152);
+}
+
+a {
+    color:rgb(122, 85, 5);
+    font-size: 20px;
+}
+
+.foot {
+    color:white;
+    background-color:rgb(116, 82, 38);
+}
+
+.p {
+    font-size: 20px;
+}
