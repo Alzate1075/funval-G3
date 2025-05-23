@@ -2,17 +2,19 @@
     margin: 0;
     padding: 0;
 }
-.caja-contenedor {
+
+/*  .caja-contenedor {
     display: flex;
     align-items: center;
     justify-content: center;
-   /* background-color: rgb(27, 2, 247); */
+   background-color: rgb(27, 2, 247);
     padding: 5px 10px;
     margin: 30px 15px;
     border: solid 1px blue;
-}
+}  */
 
-.ContenedorPrueba {
+
+/* .ContenedorPrueba {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,9 +40,28 @@
     border-radius: 10px;
     padding: 30px 20px 30px 10px;
     margin-left: 15px
-}
+} */
 
 /* --------------TABLAS-------------- */
+
+/* body {
+    height: 100uvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 table{
     border:solid 2px;
@@ -48,4 +69,46 @@ table{
     margin-left: 30px;
     margin-top: 30px;
     padding: 8px;
+    border-collapse: collapse;
 }
+
+thead th {
+    border: solid 2px;
+    padding: 4px;
+}
+
+tbody td {
+    border: solid 2px;
+    padding: 8px;
+}
+ */
+
+ /* ------------FORMULARIO---------------- */
+
+ #formulario {
+    background-color:chartreuse;
+    height: 300px;
+    width: 500px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    gap: 8px;
+    border: solid 2px;
+ }
+
+ .titulo-formulario {
+    color: rgb(0, 4, 255);
+ }
+
+ .contenedor-nombre {
+    color:blue;
+    display: flex;
+    gap: 60px;
+ }
+
+ .contenedor-inputs {
+    display: flex;
+    gap: 30px;
+ }

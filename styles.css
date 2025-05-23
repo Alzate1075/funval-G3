@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 20px;
+}
+
+h3  {
+    margin-left: 20px;
+    
+}
+
+.Contenedor1 {
+
+    padding: 20px;
+    margin: 20px 10px 10px 10px;
+    border-color: black;
+}
+
+.Dia2 {
+    padding: 10px;
+    border-color: black;
+    background-color: rgb(168, 248, 248);
+    margin: 10px 10px 10px 10px;
+
+}
+
+.Practica1 {
+    padding: 10px;
+    border-color: black;
+    background-color: aqua;
+    margin: 10px 10px 10px 10px;
+
+}
+
+.Practica2 {
+    padding: 10px;
+    border-color: black;
+    background-color: rgb(69, 255, 215);
+    margin: 10px 10px 10px 10px;
+
+}
+
+.Practica3 {
+    padding: 10px;
+    border-color: black;
+    background-color: rgb(34, 241, 144);
+    margin: 10px 10px 10px 10px;
+
+}

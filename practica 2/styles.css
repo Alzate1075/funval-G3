@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  background-image: url("./jpg/Artbeat-fondo\ de\ pantalla.png");
+  background-size: cover;
+}
+
+#Form-Artbeats {
+  background-color: black;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px 15px rgba(2, 0, 0, 0.5);
+  opacity: 0.8;
+  width: 250px;
+  height: 515px;
+  border-color: white;
+}
+
+/* ---------LOGO--------------- */
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo img {
+  width: 220px;
+  height: 180px;
+}
+
+/* ------------PARRAFO-------------- */
+
+.parrafo1 {
+  color: rgb(241, 255, 47);
+  text-align-last: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+h4 {
+  color: rgb(252, 250, 253);
+  padding: 0 3px 2px 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  margin: 15px 0 2px 15px;
+}
+
+
+/* ------------------INPUT---------------------------- */
+
+.contenedor-inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px; /* Espacio entre inputs */
+  margin: 10px 0;
+}
+
+.contenedor-inputs input {
+  width: 200px;
+  padding: 6px;
+  border-radius: 5px;
+  border: 2px solid #b83501;
+  background-color: #222;
+  color: #fff;
+}
+
+
+/* ---------BOTON (REGISTRO - LOGIN)------------ */
+
+.Registro-login {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.registro {
+    background-color: #942a00;
+    padding: 8px;
+    margin: 10px 15px;
+    border-radius: 8px;
+    border-color: rgb(175, 175, 175);
+    width: 200px;
+}
+
+.login {
+    padding: 8px;
+    background-color: rgb(33, 189, 2);
+    color: white;
+    margin: 10px 15px;
+    border-radius: 8px;
+    border-color:  rgb(175, 175, 175);
+    width: 500px;
+}
+
+/* ------------------------------------------------ */
+
+#check {
+    display: flex;
+    gap: 5px;
+    margin-left: 20px;
+}
+
+.recordar {
+    color: white;
+    font-size: 10px;
+}
+
+/* -----------REDES SOCIALES --------- */
+
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.redes img {
+  width: 30px;
+  border: 2px solid #837a7a;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.icono-tiktok {
+  width: 30px;
+  height: auto;
+}
+
