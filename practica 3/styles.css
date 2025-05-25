@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;  
+    font-family: Arial, Helvetica, sans-serif;  
+    background-color: rgb(255, 255, 255);
+}
+
+.cabecera {
+    padding: 30px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(./Jpg-Logo/Fondo-Codecraft.png);
+    background-size: cover; 
+    align-items: center;
+}
+
+.cabecera p {
+    margin: 10px;
+    color: rgb(255, 255, 254);
+    font-size: 17px;
+     
+}
+
+.cabecera img {
+    width: 450px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 15px 60px;
+    background-color: #0c173de8;
+    color:white;
+    gap: 40px;
+    align-items: center;
+}
+
+/* -----------seccion 1-------------- */
+.catalogo {
+    position: relative;
+    display: flex;
+    padding: 20px;
+    margin: 40px 20px 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    background-color: rgb(187, 246, 253);
+    border: solid 2px rgb(3, 100, 179);
+}
+
+.catalogo .texto h2 {
+  margin-bottom: 15px;
+}
+
+.catalogo img {
+  width: 300px;
+  position: absolute;
+  right: 0;
+  height: 200px;
+  margin-right: 20px;
+  border: 2px solid #024694; 
+  box-shadow: 5px 5px 15px rgba(124, 123, 123, 0.3); 
+  border-radius: 8px;
+}
+
+
+.catalogo button {
+    margin-top: 20px;       
+    padding: 10px 20px;     
+    font-size: 16px;        
+    background-color: rgb(37, 37, 102);; 
+    color: white;          
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s;
+}
+
+.catalogo button:hover {
+  background-color: #105b97;
+}
+
+/* -----------seccion 2-------------- */
+
+.nosotros {
+    position: relative;
+    display: flex;
+    padding: 20px;
+    margin: 10px 30px 30px 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    background-color: rgb(187, 246, 253);
+    border: solid 2px rgb(3, 100, 179);
+}
+
+.hero2 {
+    padding: 10px 10px 10px 50px;
+}
+
+.nosotros img {
+    display: flex;
+    width: 300px;
+    position: absolute;
+    right: 0;
+    border: 2px solid #013880; 
+    box-shadow: 5px 5px 15px rgba(124, 123, 123, 0.3); 
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    padding: 30px;
+    background-color:rgb(42, 42, 90);
+    color: white;
+}
+
+.nosotros .lista1 {
+    padding-left: 60px;
+}

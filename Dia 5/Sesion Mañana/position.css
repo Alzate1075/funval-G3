@@ -1,0 +1,55 @@
+/* 
+-Static - valor por defecto.
+
+-Absolute - la posicion que le demos, hace referencia al padre, 
+es decir si la caja contenedora tiene posicion relativa va a buscar esa posicion, 
+si no tiene ninguna posicion, va a buscar el Body.
+
+-Relative - La puedo mover sobre otros elementos.
+
+-Sticked - 
+*/
+
+/* 
+z-index - Nos muestra la posicion de los elementos.
+Elementos que tengan posicion definida,
+se pone sobre un elemento que no tiene posicion definida.
+*/
+
+/* .caja-1 {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    right: 0;
+    z-index: 1; 
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+}
+------ POSITION RELATIVE --------
+
+.caja-2 {
+    position: relative;
+}
+ */
+
+/* --------------- FLEX ------------*/
+
+ .contenedor {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+
+.cabecera {
+    position: fixed;
+    /* top: 1px; */
+    z-index: 20;
+}
+
+.cabecera2 {
+    position: sticky;
+    top: 50px;
+    z-index: 10;
+}

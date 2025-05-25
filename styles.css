@@ -3,20 +3,23 @@
     padding: 0;
 }
 
-h1 {
+.Titulo {
+    background-color:#fffb00;
+    color: rgb(255, 0, 0);
+    border-radius: 8px;
+    border: 2px orangered;
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin: 10px;
-    padding: 20px;
+    margin: 20px 400px;
+    padding: 10px;    
 }
 
-h3  {
+.practica  {
     margin-left: 20px;
     
 }
 
-.Contenedor1 {
+.semana1 {
 
     padding: 20px;
     margin: 20px 10px 10px 10px;

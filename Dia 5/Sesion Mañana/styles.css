@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.cabecera {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    align-items: center;    
+}
+
+.cabecera2 {
+    background-color: rgb(105, 2, 165);
+    color: white;
+    width: 200%;
+    height: 200%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.super-contenedor {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contenedor {
+    border: solid 2px black;
+    width: 300px;
+}
+
+.caja {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.caja-1 {
+    background-color: aqua;
+}
+
+.caja-2 {
+    background-color: rgb(0, 38, 255);
+
+}
+
+.caja-3 {
+    background-color: rgb(255, 196, 0);
+
+}
+
+.caja-4 {
+    background-color: rgb(0, 255, 64);
+
+}
+
+.caja-5 {
+    background-color: rgb(255, 0, 255);
+
+}
+
+.caja-6 {
+    background-color: rgb(89, 114, 252);
+
+}
