@@ -1,6 +1,7 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html,
@@ -8,48 +9,170 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+/* Contenedor 1 */
 .contenedor {
-    border: 2px solid rgb(0, 38, 255);
-    width: 300px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  margin: 10px;
+  padding: 5px;
+  border: 2px solid rgb(0, 38, 255);
+  width: 100%; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
 }
 
+/* Todas las cajas */
 .caja {
-    width: 100px;
     height: 100px;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 
-.caja-1 {
-    background-color: yellow;
-    order: 5;
+/* Colores y tamaños */
+
+.caja {
+  width: 45%;
 }
-.caja-2 {
-    background-color: rgb(157, 255, 0);
-    order: 3;
+
+@media (min-width: 640px) {
+    .caja {
+      min-width: 40%;
+    }
+
+.contenedor {
+      min-width: 200px;
 }
-.caja-3 {
-    background-color: rgb(60, 255, 0);
-    order: 6;
+
+    .caja-1 { 
+        background-color: yellow; order: 5; 
+    }
+    .caja-2 { 
+        background-color: rgb(157, 255, 0); order: 3; 
+    }
+    .caja-3 { 
+        background-color: rgb(60, 255, 0); order: 6; 
+    }
+    .caja-4 { 
+        background-color: rgb(0, 255, 115); order: 1; 
+    }
+    .caja-5 { 
+        background-color: rgb(0, 255, 234); order: 4; 
+    }
+    .caja-6 { 
+        background-color: rgb(0, 153, 255); order: 2; 
+    }
 }
-.caja-4 {
-    background-color: rgb(0, 255, 115);
+
+
+/* Estilos queries */
+
+
+/* sm: estilos para pantallas ≥ 640px */
+
+/* @media (min-width: 640px) {
+  
+  .contenedor {
+    width: 300px;
+  }
+  .caja-1 {
+    background-color: cyan;
     order: 1;
-}
-.caja-5 {
-    background-color: rgb(0, 255, 234);
-    order: 4;
-}
-.caja-6 {
-    background-color: rgb(0, 153, 255);
+  }
+  .caja-2 {
+    background-color: cyan;
     order: 2;
+  }
+  .caja-3 {
+    background-color: cyan;
+    order: 3;
+  }
+  .caja-4 {
+    background-color: cyan;
+    order: 4;
+  }
+  .caja-5 {
+    background-color: cyan;
+    order: 5;
+  }
+  .caja-6 {
+    background-color: cyan;
+    order: 6;
+  }
+} */
+
+/* md: estilos para pantallas ≥ 768px */
+
+/* @media (min-width: 768px) {
+  
+  .caja-1 {
+    background-color: red;
+    order: 1;
+  }
+  .caja-2 {
+    background-color: blue;
+    order: 4;
+  }
+  .caja-3 {
+    background-color: red;
+    order: 2;
+  }
+  .caja-4 {
+    background-color: blue;
+    order: 5;
+  }
+  .caja-5 {
+    background-color: red;
+    order: 3;
+  }
+  .caja-6 {
+    background-color: blue;
+    order: 6;
+  }
 }
+ */
+
+ /* lg: estilos para pantallas ≥ 1024px */
+
+/* @media (min-width: 1024px) {
+  
+  .caja-1 {
+    background-color: red;
+    order: 1;
+  }
+  .caja-2 {
+    background-color: red;
+    order: 5;
+  }
+  .caja-3 {
+    background-color: red;
+    order: 3;
+  }
+  .caja-4 {
+    background-color: blue;
+    order: 6;
+  }
+  .caja-5 {
+    background-color: blue;
+    order: 2;
+  }
+  .caja-6 {
+    background-color: blue;
+    order: 1;
+  }
+} */
+
+  /* xl: estilos para pantallas ≥ 1280px */
+/* @media (min-width: 1280px) {
+} */
+
+
+ /* 2xl: estilos para pantallas ≥ 1536px */
+/* @media (min-width: 1536px) {
+} */
 
