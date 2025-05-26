@@ -51,12 +51,13 @@ h3 {
 
 .top1-3 {
   display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(253, 196, 130);
   border-radius: 15px;
-  padding: 10px 80px;
-  margin: 30px 40px;
-  left: 40px;
-  gap: 60px;
+  padding: 5px;
+  margin: 30px 30px;
+  gap: 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
   text-align: center;
@@ -64,10 +65,12 @@ h3 {
 
 .top4-6 {
   display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(253, 196, 130);
   border-radius: 15px;
-  padding: 10px 40px;
-  margin: 30px 40px;
+  padding: 5px;
+  margin: 30px 30px;
   gap: 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
@@ -76,11 +79,13 @@ h3 {
 
 .top7-9 {
   display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(253, 196, 130);
   border-radius: 15px;
-  padding: 10px 60px;
-  margin: 30px 20px;
-  gap: 80px;
+  padding: 5px;
+  margin: 30px 30px;
+  gap: 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
   text-align: center;
@@ -90,17 +95,13 @@ h3 {
   background-color: rgb(253, 196, 130);
   border-radius: 15px;
   padding: 10px 20px;
-  margin: 20px 500px;
+  margin: 20px 450px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .pelicula:hover {
   transform: scale(1.05);
 }
-
-/* .pelicula {
-    display: flex;
-    align-items:center;
-}
- */
