@@ -1,6 +1,26 @@
 {
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.7",
+    "@tailwindcss/cli": "^4.1.7"
+  },
+  "name": "funval-g3",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "devDependencies": {
     "tailwindcss": "^4.1.7"
-  }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alzate1075/funval-G3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alzate1075/funval-G3/issues"
+  },
+  "homepage": "https://github.com/Alzate1075/funval-G3#readme",
+  "description": ""
 }
