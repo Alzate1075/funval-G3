@@ -1,11 +1,8 @@
-// filepath: f:\Estudio\Funval\Desarrollo Web\Funval G3\tailwind.config.js
 module.exports = {
-  content: [
-    "./dia-7/proyecto/index.html",
-    // agrega aquí otras rutas si tienes más archivos
-  ],
+  darkMode: 'class', // o 'media' si prefieres detectar automáticamente el tema del sistema
+  content: ['./src/**/*.{html,js}'],
   theme: {
     extend: {},
   },
   plugins: [],
-}
+};

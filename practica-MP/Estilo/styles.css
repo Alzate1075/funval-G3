@@ -1,0 +1,226 @@
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+/* ==============  Header =============== */
+
+header {
+  width: 100%;
+  height: 500px;
+  background: #0575e6;
+  background: -webkit-linear-gradient(
+      to right,
+      hsla(227, 97%, 24%, 0.705),
+      hsla(210, 96%, 46%, 0.671)
+    ),
+    url(../Jpg/Logos/CodeCraft/Fondo-Codecraft.png);
+  background: linear-gradient(
+      to right,
+      hsla(227, 97%, 24%, 0.705),
+      hsla(210, 96%, 46%, 0.589)
+    ),
+    url(../Jpg/Logos/CodeCraft/Fondo-Codecraft.png);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+/* ======================================= */
+
+/* ========== Nuestros Servicios =========== */
+
+.servicio-ind {
+  width: 100%;
+  max-width: 320px;
+  margin: auto;
+}
+
+.servicio-ind img {
+  width: 90%;
+}
+
+.servicio-ind h3 {
+  margin: 10px 0;
+}
+
+.servicio-ind p {
+  font-weight: 300;
+  text-align: justify;
+}
+
+/* ========= Footer ============ */
+
+footer {
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+  background: #ffffff;
+  background: -webkit-linear-gradient(
+    to right,
+    hsla(231, 94%, 42%, 0.452),
+    hsla(225, 100%, 79%, 0.705)
+  );
+  background: linear-gradient(
+    to right,
+    hsla(231, 94%, 42%, 0.815),
+    hsla(225, 95%, 77%, 0.705)
+  );
+}
+
+.contenedor-footer {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.content-foo {
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  top: 20px;
+}
+
+.content-foo h4 {
+  color: #000000;
+  border-bottom: 3px solid #06020f;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.content-foo p {
+  color: #000000;
+}
+
+.titulo-final {
+  text-align: center;
+  font-size: 15px;
+  margin: 20px 0 0 0;
+  color: #fff;
+}
+
+/* ========= Redes sociales ======== */
+
+.Contenedor-Redes-Sociales img {
+  float: center;
+  width: 200px;
+  height: auto;
+  position: relative;
+  top: 10px;
+}
+
+.Contenedor-Redes-Sociales {
+  text-align: center;
+  color: #fff;
+  position: relative;
+  top: -60px;
+}
+
+/* ======== Mapa del Sitio ========== */
+
+/* Enlace */
+.Contenedor-MapadelSitio {
+  margin-left: 5%;
+  text-align: left;
+  color: #000000;
+  position: relative;
+  top: 60px;
+}
+
+/* ========Volver Inicio ========= */
+
+.volver-inicio {
+  text-align: right;
+  margin-right: 5%;
+  position: relative;
+  top: -40px;
+  color: #000000;
+}
+
+/* ============ Tipo Responsive =========== */
+
+@media screen and (max-width: 900px) {
+  /* Galeria */
+
+  .imagen-port {
+    width: 44%;
+  }
+
+  /* Clientes */
+
+  .cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards .card {
+    width: 90%;
+  }
+
+  .cards .card:first-child {
+    margin-bottom: 30px;
+  }
+
+  /* servicios */
+
+  .servicio-cont {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .servicio-ind {
+    width: 100%;
+    text-align: center;
+  }
+
+  .servicio-ind:nth-child(1),
+  .servicio-ind:nth-child(2) {
+    margin-bottom: 60px;
+  }
+
+  .servicio-ind img {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* Sobre nosotros */
+  /* 
+  .imagen-about-us {
+    margin-bottom: 60px;
+    width: 99%;
+  } */
+
+  /* .sobre-nosotros .contenido-textos {
+    width: 95%;
+  }
+ */
+  /* Galeria */
+
+  .imagen-port {
+    width: 95%;
+  }
+
+  /* Clients */
+
+  .cards .card {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards .card img {
+    width: 90px;
+    height: 90px;
+  }
+

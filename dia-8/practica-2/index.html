@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Diseño Responsivo</title>
+  </head>
+  <body class="bg-white m-2 flex flex-col gap-2 min-h-screen">
+    <header
+      class="h-16 flex items-center justify-center text-4xl font-bold border-2 border-black italic bg-[#fcb180] sm:bg-[#00fcf8] md:bg-[#03fc02] md:justify-start md:pl-4"
+    >
+      Header
+    </header>
+
+    <main
+      class="flex flex-col gap-2 flex-grow sm:grid sm:grid-cols-2 sm:gap-2 md:flex md:flex-row md:gap-4 md:grid-none"
+    >
+      <div
+        class="bg-[#fd0100] border-2 border-black text-8xl flex items-center justify-center h-28 sm:h-48 md:h-auto md:flex-1 md:pt-4"
+      >
+        1
+      </div>
+
+      <div
+        class="bg-[#00fcf8] border-2 border-black text-8xl flex items-center justify-center h-28 sm:h-48 sm:bg-[#fd0100] md:h-auto md:flex-1 md:pt-4"
+      >
+        2
+      </div>
+
+      <div
+        class="bg-[#fd0100] border-2 border-black text-8xl flex items-center justify-center h-28 sm:h-32 sm:col-span-2 sm:bg-[#03fc02] md:h-auto md:bg-[#fd0100] md:flex-1 md:pt-4 md:col-span-1"
+      >
+        3
+      </div>
+    </main>
+
+    <footer class="flex flex-col gap-2 md:flex-row">
+      <div
+        class="bg-[#f9fd05] text-3xl font-bold border-2 border-black flex items-center justify-center h-14 italic md:justify-end md:pr-4 md:flex-1"
+      >
+        Footer 1
+      </div>
+      <div
+        class="bg-[#f9fd05] text-3xl font-bold border-2 border-black flex items-center justify-center h-14 italic md:justify-start md:pl-4 md:flex-1"
+      >
+        Footer 2
+      </div>
+    </footer>
+  </body>
+</html>

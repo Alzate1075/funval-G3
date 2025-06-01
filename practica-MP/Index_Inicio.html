@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mini Proyecto</title>
+    <link
+      rel="shortcut icon"
+      href="./Jpg/Logos/CodeCraft/CodeCraftIcon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./Estilo/styles.css" />
+  </head>
+
+  <body class="w-full h-full">
+    <header class="bg-position-center">
+      <nav
+        class="text-white p-4 text-xl flex flex-wrap justify-center md:justify-start"
+      >
+        <a
+          href="Index_Inicio.html"
+          class="px-2 py-2 hover:underline hover:scale-110 transform transition duration-300 hover:text-yellow-300"
+          >Inicio</a
+        >
+        <a
+          href="Index_Portafolio.html"
+          class="px-2 py-2 hover:underline hover:scale-110 transform transition duration-300 hover:text-yellow-300"
+          >Portafolio</a
+        >
+        <a
+          href="Index_Servicios.html"
+          class="px-2 py-2 hover:underline hover:scale-110 transform transition duration-300 hover:text-yellow-300"
+          >Servicios</a
+        >
+        <a
+          href="Index_Contactanos.html"
+          class="px-2 py-2 hover:underline hover:scale-110 transform transition duration-300 hover:text-yellow-300"
+          >Contáctanos</a
+        >
+      </nav>
+      <br />
+      <div class="flex justify-center items-center pt-2 mb-4">
+        <img
+          src="./Jpg/Logos/CodeCraft/CodeCraftLogo1.png"
+          alt="Logo CodeCraft"
+          class="w-full max-w-xs sm:max-w-md md:max-w-lg h-auto object-contain mx-auto"
+        />
+      </div>
+
+      <!-- clase wave (Ola) -->
+      <div class="wave" style="height: 100px; overflow: hidden">
+        <svg
+          viewBox="0 0 500 150"
+          preserveAspectRatio="none"
+          style="height: 100%; width: 100%"
+        >
+          <path
+            d="M0.00,50.10 C150.00,150.33 349.20,-50.10 500.00,50.10 L500.00,150.33 L0.00,150.33 Z"
+            style="stroke: none; fill: hsla(0, 0%, 100%, 0.459)"
+          ></path>
+        </svg>
+      </div>
+    </header>
+
+    <main>
+      <section
+        class="Quienes-somos py-[40px] w-[90%] m-auto overflow-hidden align-center"
+      >
+        <h2
+          class="titulo text-[#3b2b8c] text-3xl flex text-center justify-center mb-[40px] shadow-[0_0_6px_0_rgba(0,0,0,0.5)] p-2"
+        >
+          <b>¿QUIENES SOMOS?</b>
+        </h2>
+        <div
+          class="Nosotros flex flex-col md:flex-row items-center justify-center gap-12 m-12"
+        >
+          <video
+            src="./Jpg/Videos/Nosotros Vid.mp4"
+            autoplay
+            muted
+            loop
+            class="w-full rounded-2xl shadow-lg max-w-xs sm:max-w-md md:max-w-sm h-auto object-contain mx-auto"
+          ></video>
+
+          <div class="contenido-textos text-center md:text-center text-2xl m-4">
+            <p>
+              <b>CodeCraft</b> nació con la idea de transformar ideas en código.
+              Desde entonces, hemos crecido construyendo confianza y calidad en
+              cada proyecto. Cada línea de código que escribimos refleja nuestro
+              compromiso con la excelencia y el crecimiento continuo. Hoy
+              seguimos avanzando, llevando soluciones digitales a quienes sueñan
+              en grande. Creemos en el poder de la tecnología para cambiar vidas
+              y en el valor de acompañar a nuestros clientes en cada etapa de su
+              visión.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="Modulos py-[10px] w-[90%] max-w-[1000px] m-auto overflow-hidden"
+      >
+        <div class="contenedor">
+          <h2
+            class="titulo text-[#3b2b8c] text-3xl flex text-center justify-center mb-[60px] shadow-[0_0_6px_0_rgba(0,0,0,0.5)] p-2"
+          >
+            <b>MODULOS</b>
+          </h2>
+          <div
+            class="galeria-port flex flex-wrap justify-center gap-10 w-[90%] max-w-[1200px] m-auto"
+          >
+            <!-- Tarjeta 1 -->
+            <div
+              class="imagen-port w-full sm:w-[48%] lg:w-[30%] overflow-hidden relative cursor-pointer shadow-[0_0_6px_0_rgba(0,0,0,0.3)] group"
+            >
+              <img
+                src="./Jpg/Modulo/Portafolio.jpeg"
+                alt="Portafolio"
+                class="w-full h-auto"
+              />
+              <div
+                class="hover-galeria absolute w-full h-full top-0 scale-0 group-hover:scale-100 bg-[rgba(37,27,80,0.66)] transition-transform duration-500 flex justify-center items-center flex-col"
+              >
+                <img
+                  src="Jpg/Iconos/Target.png"
+                  alt="Icono-Target"
+                  class="w-[50px] h-[50px] object-contain mb-2"
+                />
+                <p class="text-white font-semibold">Portafolio</p>
+              </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div
+              class="imagen-port w-full sm:w-[48%] lg:w-[30%] overflow-hidden relative cursor-pointer shadow-[0_0_6px_0_rgba(0,0,0,0.3)] group"
+            >
+              <img
+                src="./Jpg/Modulo/Servicios.jpeg"
+                alt="Servicios"
+                class="w-full h-auto"
+              />
+              <div
+                class="hover-galeria absolute w-full h-full top-0 scale-0 group-hover:scale-100 bg-[rgba(37,27,80,0.66)] transition-transform duration-500 flex justify-center items-center flex-col"
+              >
+                <img
+                  src="Jpg/Iconos/Target.png"
+                  alt="Icono-Target"
+                  class="w-[50px] h-[50px] object-contain mb-2"
+                />
+                <p class="text-white font-semibold">Servicios</p>
+              </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div
+              class="imagen-port w-full sm:w-[48%] lg:w-[30%] overflow-hidden relative cursor-pointer shadow-[0_0_6px_0_rgba(0,0,0,0.3)] group"
+            >
+              <img
+                src="./Jpg/Modulo/Contactanos1.jpeg"
+                alt="Contactanos"
+                class="w-full h-auto"
+              />
+              <div
+                class="hover-galeria absolute w-full h-full top-0 scale-0 group-hover:scale-100 bg-[rgba(37,27,80,0.66)] transition-transform duration-500 flex justify-center items-center flex-col"
+              >
+                <img
+                  src="Jpg/Iconos/Target.png"
+                  alt="Icono-Target"
+                  class="w-[50px] h-[50px] object-contain mb-2"
+                />
+                <p class="text-white font-semibold">Contáctanos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="Quien-soy py-[20px] w-[90%] max-w-[1000px] m-auto overflow-hidden"
+      >
+        <h2
+          class="titulo text-[#3b2b8c] text-3xl flex justify-center text-center mb-[60px] shadow-[0_0_6px_0_rgba(0,0,0,0.5)] p-2"
+        >
+          <b>¿QUIÉN SOY?</b>
+        </h2>
+
+        <div
+          class="flex flex-col md:flex-row items-center justify-between bg-transparent w-full px-4 md:px-10 py-8"
+        >
+          <div
+            class="relative w-[300px] h-[300px] md:w-[300px] md:h-[300px] rounded-full overflow-hidden border-[6px] border-[rgba(41,37,95,0.66)] shadow-lg md:mb-0"
+          >
+            <video
+              src="./Jpg/Videos/soy-yo.mp4"
+              autoplay
+              muted
+              loop
+              playsinline
+              class="w-full h-full object-cover"
+            ></video>
+          </div>
+
+          <div
+            class="contenido-texto-card text-center md:text-left text-2xl max-w-xl mt-8"
+          >
+            <h4 class="font-bold text-[#3b2b8c]">EDWIN ALZATE</h4>
+            <p>
+              Soy un emprendedor creativo colombiano, apasionado por la
+              innovación y el desarrollo de soluciones tecnológicas que generen
+              un impacto positivo. Mi compromiso con el trabajo, el aprendizaje
+              constante y la excelencia ha sido clave en mi crecimiento personal
+              y profesional. Soy esposo y padre de dos hijos, y encuentro en mi
+              familia y en mi fe en Dios la inspiración diaria para seguir
+              creciendo. Creo firmemente en el poder de la mejora continua y en
+              la importancia de dar siempre lo mejor, en cada proyecto y en cada
+              paso del camino.
+            </p>
+          </div>
+        </div>
+        <div class="flex justify-center mt-6 m-4">
+          <button
+            class="cursor-pointer text-3xl text-white bg-blue-700 hover:bg-blue-900 p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+          >
+            Descargar CV 📜
+          </button>
+        </div>
+      </section>
+
+      <!-- <section
+        class="about-services flex flex-col items-center bg-gray-200 gap-4"
+      >
+        <div class="contenedor text-center items-center justify-center gap-4">
+          <h2 class="titulo">Nuestros Servicios</h2>
+          <div class="servicio-cont flex col-3 gap-12">
+            <div class="servicio-ind pb-4">
+              <img src="Jpg/Servicios/Desarrollo.jpg" alt="Servicio" />
+              <h3>"DESARROLLO DE SOFTWARE"</h3>
+              <p>
+                Creación de aplicaciones y soluciones personalizadas que se
+                ajustan a las necesidades específicas de cada cliente,
+                utilizando tecnologías modernas y metodologías ágiles para
+                garantizar un producto de alta calidad y funcionalidad.
+              </p>
+            </div>
+            <div class="servicio-ind pb-4">
+              <img src="Jpg/Servicios/Consultopria.png" alt="Servicio" />
+              <h3>"CONSULTORIA TECNOLOGICA"</h3>
+              <p>
+                Asesoramiento experto para empresas que buscan optimizar sus
+                procesos tecnológicos, mejorar su infraestructura de software o
+                implementar nuevas herramientas digitales que impulsen su
+                crecimiento y eficiencia operativa.
+              </p>
+            </div>
+            <div class="servicio-ind pb-4">
+              <img src="Jpg/Servicios/Aplicaciones.png" alt="Servicio" />
+              <h3>"DESARROLLO DE APLICACIONES MOVILES"</h3>
+              <p>
+                Diseño y creación de aplicaciones móviles innovadoras y
+                funcionales para iOS y Android, enfocadas en ofrecer una
+                excelente experiencia de usuario y cumplir con los objetivos
+                comerciales de nuestros clientes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    </main>
+    <footer>
+      <div class="contenedor-footer text-white items-center justify-center">
+        <div class="content-foo">
+          <h4>TELEFONO</h4>
+          <p>(+57) 317 497 3545</p>
+        </div>
+        <div class="content-foo">
+          <h4>EMAIL</h4>
+          <p>codecraft@gmail.com</p>
+        </div>
+        <div class="content-foo">
+          <h4>DIRECCION</h4>
+          <p>Bogota - Avenida Siempre viva</p>
+        </div>
+      </div>
+
+      <div class="flex justify-around items-center">
+        <h2 class="http text-2xl text-white">
+          &copy; https://CodeCraft.com.co
+        </h2>
+
+        <div class="flex justify-end m-6">
+          <a href="#top" aria-label="Volver al inicio"
+            ><button
+              class="cursor-pointer text-lg font-semibold bg-white text-center p-2 rounded-2xl shadow-lg hover:bg-yellow-200 transition-colors duration-300 hover:scale-105"
+            >
+              VOLVER AL INICIO
+            </button></a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

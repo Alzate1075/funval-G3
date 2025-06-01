@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>Dia 9 - Practica 2</title>
+  </head>
+  <body class="h-full flex flex-col">
+    <header
+      class="h-[20vh] w-full bg-amber-400 text-red-500 text-3xl font-bold flex items-center justify-center gap-8"
+    >
+      DEJAME ENTRAR
+      <img
+        src="https://www.churchofjesuschrist.org/imgs/342168c6cfe8a02a338c16f7f47fcf73f5b8db2d/full/1600%2C/0/default"
+        alt="Logo"
+        class="items-start rounded-full h-25 w-15 object-cover shadow-lg border-4 border-white dark:border-orange-800"
+      />
+
+      <ul
+        class="text-blue-500 text-lg sm:text-xl md:text-2xl items-center justify-end"
+      >
+        <li>menu</li>
+        <li>contacto</li>
+      </ul>
+    </header>
+    <menu
+      class="h-[80vh] w-full bg-yellow-200 grid grid-cols-2 md:grid-cols-2 gap-4 items-center justify-items-center p-4"
+    >
+      <!-- Columna 1: Imagen -->
+      <div class="flex justify-center items-center">
+        <img
+          src="https://www.churchofjesuschrist.org/imgs/a0c2621d7e3f8b06dc2be176f672551d097c0e9c/full/800%2C/0/default"
+          alt="Jesucristo"
+          class="w-60 h-80 rounded-md shadow-lg"
+        />
+      </div>
+      <!-- Columna 2: Cuadros 2x2 -->
+      <div class="grid grid-cols-2 grid-rows-2 gap-4">
+        <div class="bg-red-300 h-40 w-40 m-2 flex items-center justify-center">
+          1
+        </div>
+        <div class="bg-red-300 h-40 w-40 m-2 flex items-center justify-center">
+          2
+        </div>
+        <div class="bg-red-300 h-40 w-40 m-2 flex items-center justify-center">
+          3
+        </div>
+        <div class="bg-red-300 h-40 w-40 m-2 flex items-center justify-center">
+          4
+        </div>
+      </div>
+    </menu>
+    <footer>
+      <form class="max-w-sm mx-2 grid grid-rows-2">
+        <div class="mb-5">
+          <label
+            for="email"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Your email</label
+          >
+          <input
+            type="email"
+            id="email"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="name@flowbite.com"
+            required
+          />
+        </div>
+        <div class="mb-5">
+          <label
+            for="password"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Your password</label
+          >
+          <input
+            type="password"
+            id="password"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            required
+          />
+        </div>
+
+        <button
+          type="submit"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >
+          Submit
+        </button>
+      </form>
+      <div class="grid grid-cols-2 grid-rows-2 gap-4">
+        <div class="bg-red-300 h-40 w-40 m-2 flex items-center justify-center">
+          1
+        </div>
+        <div class="bg-red-300 h-40 w-40 m-2 flex items-center justify-center">
+          2
+        </div>
+        <div class="bg-red-300 h-40 w-40 m-2 flex items-center justify-center">
+          3
+        </div>
+        <div class="bg-red-300 h-40 w-40 m-2 flex items-center justify-center">
+          4
+        </div>
+      <div></div>
+    </footer>
+  </body>
+</html>
