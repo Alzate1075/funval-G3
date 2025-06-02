@@ -287,3 +287,22 @@ ingresarTemplo = temploAbierto && animos && recomendacion;
 let salidafeliz = salirBarrio && dirigirTemplo && ingresarTemplo;
 
 console.log(salidafeliz);
+
+/* ============================================== */
+
+/* OPERADOR TERNARY */
+
+/* condition ? exprIfTrue : exprIfFalse; */
+
+let internet = true;
+let verOnepiece = true;
+internet && verOnepiece ?
+console.log("profe feliz") : console.log("profesor triste");
+
+let x = 8;
+let y = 6;
+let z = 4;
+
+x > y ? x > z ?
+console.log("x es mayor") : console.log("z es mayor") : y > z ? console.log("y es mayor") : console.log("z es mayor");
+
