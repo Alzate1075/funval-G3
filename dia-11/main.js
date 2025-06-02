@@ -145,3 +145,83 @@ console.log(typeof simboloSistema);
 console.log(typeof numeroBig);
 
 //6
+
+/* =================================== */
+
+/* OPERADORES ARITMETICOS */
+
+
+let a = 5;
+let b = 2;
+
+/* 1 - SUMA */
+let suma = a+b;
+console.log(suma)
+
+/* 2 - RESTA */
+let resta = a-b;
+console.log(resta);
+
+/* 3 - MULTIPLICACION */
+let multiplicacion = a*b;
+console.log(multiplicacion)
+
+/* 4 - DIVISION */
+let division = a/b;
+console.log(division)
+
+/* 5 - MODULO */
+let modulo = a % b;
+console.log(modulo);
+
+/* 6 - EXPONENCIAL */
+let exponente = a**b;
+ 
+/* 7 - INCREMENTO */
+a++; //a=a+1
+console.log(a);
+
+/* 8 - DECREMENTO */
+a--; //a=a-1
+console.log(a);
+
+/* ========================= */
+
+/* OPERADORES DE ASIGNACION */
+
+let var_322 = 23;
+var_322 = 34;
+/* de Suma */
+var_322 += 10; //var_322 = var_322 + 10
+/* de Resta */
+var_322 -= 5; //var_322 = var_322 -5
+/* de multiplicacion */
+var_322 *= 2; //var_322 = var_322 *2
+console.log(var_322);
+/* de division */
+var_322 /= 2; //var_322 = var_322 / 2
+
+/* ======================================= */
+
+/* OPERADORES DE COMPARACION */
+
+//Siempre va dar un resultado Booleano
+
+let aa = 22;
+let bb = 77;
+
+aa==bb; //El doble == compara 22 es igual a 77 entonces va a devolver VERDADER o FALSO
+
+let resultadito = aa == bb; //FALSE o TRUE Solo compara el dato y NO el tipo de dato / es decir si el dato es a = 22 b = "22" nos dara resultado TRUE por que solo compara el dato y no el tipo de dato, si es STRING o NUMBER o etc.
+
+console.log(resultadito);
+
+let resultado1 = a === bb;
+console.log(resultado1); //FALSE OR TRUE Compara el DATO y el TIPO DE DATO
+
+/* COMPARADOR ESTRICTO QUE */
+let resultado2 = aa > bb; // Mayor estricto que
+/* Mayor o igual que */
+let resultado3 = aa >= bb;
+/* Menor o igual que */
+let resultado4 = aa <= bb;
