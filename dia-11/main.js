@@ -69,7 +69,7 @@ let numeroGrande2 = BigInt(222247589243759072410751475178187185715782137372175);
 
 console.log(typeof nombre);
 console.log(enteros);
-console.log(johan);
+console.log(verdadero);
 console.log(simbolo);
 
 /* EJERCICIOS EN CLASE */
@@ -119,7 +119,7 @@ let numeroBig2 = BigInt(222247589243759072410751475178187185715782137372175); //
 //4
 console.log(miNombre);
 console.log(miApellido);
-console.log(numeroEnterontero);
+console.log(numeroEntero);
 console.log(unDecimal);
 console.log(negativos);
 console.log(verdad);
@@ -133,13 +133,15 @@ console.log(numeroBig)
 //5
 console.log(typeof miNombre);
 console.log(typeof miApellido);
-console.log(typeof numeroEnterontero);
+console.log(typeof numeroEntero);
 console.log(typeof unDecimal);
 console.log(typeof negativos);
 console.log(typeof verdad);
 console.log(typeof mentira);
-console.log(typeof miNombre);
-console.log(typeof miNombre);
-console.log(typeof miNombre);
-console.log(typeof miNombre);
-console.log(typeof miNombre);
+console.log(typeof niIdea);
+console.log(typeof edwin);
+console.log(typeof value_raro);
+console.log(typeof simboloSistema);
+console.log(typeof numeroBig);
+
+//6
