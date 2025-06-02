@@ -233,3 +233,57 @@ resultado5 = aa < bb;
 /* Menor o igual que */
 resultado6 = aa <= bb;
 
+/* ============================================ */
+
+/* OPERADORES LOGICOS */
+//AND &&
+//OR !!
+//NOT !
+
+/* let permiso = true;
+let mayorEdad = false;
+
+let entrarDiscoteca = permiso && mayorEdad;
+console.log(entrarDiscoteca);
+
+
+let permisoMama = true;
+let permisoPapa = false;
+let mayorEdad1 = true;
+
+let salidaCasa = permisoMama || permisoPapa;
+
+resultado = entrarDiscoteca && salidaCasa;
+
+console.log(resultado);
+ */
+
+/* CONCATENAR RESULTADOS */
+/* 
+
+resultado = permisoMama && mayorEdad && (permisoMama || mayorEdad);
+
+console.log(resultado);
+
+console.log(!mayorEdad);
+console.log(salidaCasa);
+console.log(entrarDiscoteca);
+ */
+
+/* EJERCICIOS */
+
+let platita = true;
+let recomendacion = true;
+let bloqueos = true;
+let animos = true;
+let temploAbierto = true;
+
+let salirBarrio = platita && recomendacion;
+
+let dirigirTemplo = bloqueos || temploAbierto;
+
+ingresarTemplo = temploAbierto && animos && recomendacion;
+
+let salidafeliz = salirBarrio && dirigirTemplo && ingresarTemplo;
+
+console.log(salidafeliz);
