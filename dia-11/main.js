@@ -223,5 +223,13 @@ console.log(resultado1); //FALSE OR TRUE Compara el DATO y el TIPO DE DATO
 let resultado2 = aa > bb; // Mayor estricto que
 /* Mayor o igual que */
 let resultado3 = aa >= bb;
+
+
+aa=60;
+bb=59;
+
+/* comparador menor estricto que */
+resultado5 = aa < bb;
 /* Menor o igual que */
-let resultado4 = aa <= bb;
+resultado6 = aa <= bb;
+
