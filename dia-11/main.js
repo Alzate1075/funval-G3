@@ -203,7 +203,7 @@ var_322 /= 2; //var_322 = var_322 / 2
 
 /* ======================================= */
 
-/* OPERADORES DE COMPARACION */
+/* OPERADORES DE COMPARACION RELACIONALES */
 
 //Siempre va dar un resultado Booleano
 
@@ -236,11 +236,11 @@ resultado6 = aa <= bb;
 /* ============================================ */
 
 /* OPERADORES LOGICOS */
-//AND &&
+//AND && - se usa si el antes y el despues son Booleanos (True/False)
 //OR !!
 //NOT !
 
-/* let permiso = true;
+let permiso = true;
 let mayorEdad = false;
 
 let entrarDiscoteca = permiso && mayorEdad;
@@ -256,7 +256,7 @@ let salidaCasa = permisoMama || permisoPapa;
 resultado = entrarDiscoteca && salidaCasa;
 
 console.log(resultado);
- */
+
 
 /* CONCATENAR RESULTADOS */
 /* 
@@ -292,7 +292,7 @@ console.log(salidafeliz);
 
 /* OPERADOR TERNARY */
 
-/* condition ? exprIfTrue : exprIfFalse; */
+/* condition ? exprIfTrue : exprIfFalse; */ //La condicion debe ser un valor booleano
 
 let internet = true;
 let verOnepiece = true;
@@ -306,3 +306,35 @@ let z = 4;
 x > y ? x > z ?
 console.log("x es mayor") : console.log("z es mayor") : y > z ? console.log("y es mayor") : console.log("z es mayor");
 
+/* ============================ */
+/* RESOLVIENDO EJERCICIOS */
+let suma1 = 4;
+let resta1 = 37;
+let multiplicacion1 = 8;
+let division1 = 2;
+
+let suma2 = 1;
+let resta2 = 2;
+let multiplicacion2 = 3;
+let division2 = 4;
+
+suma2 += suma1;
+resta2 -= resta1;
+division2 /= division1;
+multiplicacion2 *= multiplicacion1;
+
+console.log(resta1 > resta2);
+console.log(multiplicacion1 === 8);
+console.log(multiplicacion2 >= suma2);
+console.log(division2 <= multiplicacion1);
+console.log(10 < 15);
+
+console.log(!(resta1 > resta2));
+console.log(!(multiplicacion1 === 8));
+console.log(!(multiplicacion2 >= suma2));
+console.log(!(division2 <= multiplicacion1));
+console.log(!(10 < 15));
+
+let respuesta = (resta2 && suma2) >=1; 
+respuesta = suma2 < resta2 || division2 <= multiplicacion2;
+let combinacion = (suma2 && division2) 
