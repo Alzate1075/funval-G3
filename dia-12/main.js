@@ -45,19 +45,19 @@ console.log(nombre[3]); /* trae el caracter en esa posición */
 // IF ELSE
 
 // if (condicion) {
-//   // Código si la condición es true
+// Código si la condición es true
 // } else {
-//   // Código si la condición es false
+// Código si la condición es false
 // }
 
 // IF ELSE IF
 
 // if (condicion) {
-//   // Código si la primera condición es true
+// Código si la primera condición es true
 // } else if (condicion2) {
-//   // Código si la segunda condición es true
+// Código si la segunda condición es true
 // } else {
-//   // Código si ninguna condición es true
+// Código si ninguna condición es true
 // }
 
 let permiso = true;
@@ -101,14 +101,20 @@ let activo = true;
 let nombreCompleto = nombre1 + " " + apellido;
 
 // Métodos de strings
-console.log(nombre1.length); // cantidad de caracteres
-console.log(apellido.length);
-console.log(nombre1.indexOf("T")); // posición de "T", -1 si no existe
-console.log(nombre1.toLowerCase());
-console.log(nombre1.toUpperCase());
-console.log(nombre1.includes("tho"));
-console.log(nombre1.slice(2, 4));
-console.log(nombre1[3]);
+console.log(nombre1.length); // Devuelve la cantidad de caracteres que tiene el string 'nombre1'
+console.log(apellido.length); // Devuelve la cantidad de caracteres del string 'apellido'
+
+console.log(nombre1.indexOf("T")); // Busca la posición de la letra "T" en el string; si no la encuentra, devuelve -1
+
+console.log(nombre1.toLowerCase()); // Convierte todos los caracteres del string a minúsculas
+console.log(nombre1.toUpperCase()); // Convierte todos los caracteres del string a MAYÚSCULAS
+
+console.log(nombre1.includes("tho")); // Devuelve true si el string contiene "tho", y false si no lo contiene
+
+console.log(nombre1.slice(2, 4)); // Extrae una parte del string desde el índice 2 (inclusive) hasta el 4 (exclusivo)
+
+console.log(nombre1[3]); // Muestra el carácter que está en la posición 3 del string (contando desde 0)
+
 
 // Condicionales
 // let edadDisco = 0; // Ya declarada antes
@@ -255,6 +261,7 @@ switch (mes) {
 }
 
 // 8. Saludo por idioma
+
 let idioma = "es";
 switch (idioma) {
   case "es":
@@ -269,3 +276,48 @@ switch (idioma) {
   default:
     console.log("Idioma no soportado");
 }
+
+/* =============================== */
+
+/* let nombreUsuario = prompt("ingresa tu nombre");
+let edadUsuario = pront("ingresa tu edad");
+console.log(nombreUsuario);
+console.log(nombreUsuario.length);
+console.log(typeof edadUsuario); */
+
+//parseInt convierte los string a number
+// parseFloat convierte los string a decimal
+
+let edadDefinitiva = parseInt(edadUsuario); 
+let edadDecimal = parseFloat(edadUsuario); 
+console.log(typeof edadDefinitiva);
+console.log(edadDefinitiva);
+console.log(typeof edadDecimal);
+console.log(edadDecimal);
+
+/* GRUPO DE LOS NO HOMEROS */
+
+/*
+pedimos al cliente q nos ingrese el nombre de usuario
+si el nombre de usuario es Homero no se le debera permitir el ingreso al club
+a menos que la cantidad de Homeros sea de 1 si es mayor o igual a 1 no se le permitira el ingreso al club
+*/
+
+//RESULTADO 
+
+let homeros = 0; // contador global de Homeros
+
+let nombreUsuario = prompt("Ingresa tu nombre de usuario");
+
+if (nombreUsuario.toLowerCase() === "homero") {
+  if (homeros === 0) {
+    console.log("Puedes entrar al club");
+    homeros++;
+    console.log("La cantidad de Homeros es: " + homeros);
+  } else {
+    console.log("No puedes entrar al club, ya hay un Homero");
+  }
+} else {
+  console.log(`Puedes entrar al club, ${nombreUsuario}`);
+}
+
