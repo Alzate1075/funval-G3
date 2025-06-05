@@ -202,8 +202,10 @@ console.log(promedio);
  */
 /* =========================================== */
 
-/* tenemos un array de estudiantes con diferentes notas quiero q me muestre un listado
-de los estudiantes aprobados, se considerara aprobado aquel q tenga un promedio mayor a 51 */
+/* 
+tenemos un array de estudiantes con diferentes notas quiero q me muestre un listado
+de los estudiantes aprobados, se considerara aprobado aquel q tenga un promedio mayor a 51 
+*/
 
 let estudiantes = [
   {
@@ -238,8 +240,35 @@ let estudiantes = [
   },
 ];
 
-let promedioEstudiante = 0;
+function calcularPromedio(notas){
 
-estudiantes.forEach(notas => {
+    let promedio = 0;
+    for (let index = 0; index < notas.length; index++) {
+    promedio = promedio + notas[index];
+    }
+    promedio = promedio / notas.length;
+    return promedio;
+}
+
+for (let index = 0; index < estudiantes.length; index++) {
+    let estudiantePromedio = calcularPromedio(estudiantes[index].notas);
+    if (estudiantePromedio >= 51){
+        console.log(
+            "estudiante " +
+            estudiantes[index].nombre +
+            " Aprobado con ub promedio de: " +
+            estudiantePromedio
+        );
+    }
+}
+
+/* del array de estudiantes mostrar a todos los estudiantes que pertenezcan al pais de argentina */
+
+for (let index = 0; index < estudiantes.length; index++) {
+    let paises = estudiantes[index].pais;
+    let nombres = estudiantes[index].nombre;
+    if (estudiantes[index].pais === "Argentina"){
+        console.log("El estudiante " + nombres + " es de: " + paises);
+    }
     
-});
+}
