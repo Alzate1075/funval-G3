@@ -46,16 +46,16 @@ Este programa permite calcular el área de diferentes figuras geométricas: cuad
 
 
 function iniciarCalculadora() {
-    let nombreUsuario = prompt("Bienvenido a CODECRAFT - Ingresa tu nombre de usuario");
+    let nombreUsuario = prompt("Bienvenido a CODECRAFT - Por favor ingresa tu nombre de usuario.");
 
     while (!nombreUsuario || nombreUsuario.trim() === "") {
-        alert("No es un nombre correcto. Intenta nuevamente.");
+        alert("No es un nombre correcto, Intenta nuevamente.");
         nombreUsuario = prompt("Ingresa tu nombre de usuario:");
     }
 
     let menu;
     do {
-        menu = prompt("Hola " + nombreUsuario + " Gracias por utilizar nuestra Calculadora de Áreas Geométricas. \nIngresa (s) para continuar: ");
+        menu = prompt("Hola " + nombreUsuario + ", Gracias por utilizar nuestra Calculadora de Áreas Geométricas. \nIngresa (s) para continuar: ");
         if (menu) menu = menu.toLowerCase();
     } while (menu !== "s");
 
@@ -70,7 +70,7 @@ function iniciarCalculadora() {
         ));
 
         if (opcionMenu === 1 || opcionMenu === 2 || opcionMenu === 3) {
-            break; // opción válida
+            break;
         } else {
             alert("Esta no es una opción válida, por favor selecciona una de las opciones del menú.");
         }

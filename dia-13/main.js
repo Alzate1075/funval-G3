@@ -107,11 +107,11 @@ LOS FACTORIALES DE UN NÚMERO
 
 /* DECLARAR UN AFUNCIÓN */
 
-function duplicar(numero) {
+/* function duplicar(numero) {
     let resultado = 0;
     resultado = numero * 2;
     return resultado;
-}
+} */
 
 /* El codigo sera reutilizable?
 el codigo maneja su propia logica?
@@ -119,29 +119,31 @@ Que tanto alcance tendra mi funcion */
 
 // COMO LLAMAR UNA FUNCION
 
-console.log(duplicar(5));
+/* console.log(duplicar(5));
 console.log(duplicar(33));
-console.log(duplicar(77));
+console.log(duplicar(77)); */
 
 /* Invertir un string y eliminar los espacios "Edwin Alzate " "etazlA niwdE" 
 funcion para eliminar los espacios de un string
 funcion para invertir los elemento de un string
 */
 
-function eliminaEspacios(cadena){
+/*!== esto significa Diferente*/
+
+/* function eliminaEspacios(cadena){
     let resultado= " ";
     for (let i = 0; i < cadena.length; i++) {
-        if (cadena[i] !== " "){    /*!== esto significa Diferente*/
+        if (cadena[i] !== " "){    
             resultado = resultado + cadena[i];
         }
     }
     return resultado;
 }
 
-console.log(eliminaEspacios("k e v i n r o d r i g u e z"));
+console.log(eliminaEspacios("k e v i n r o d r i g u e z")); */
 
 
-function invertirTexto(texto) {
+/* function invertirTexto(texto) {
     let invertido = "";
     for (let i = texto.length - 1; i >= 0; i--) {
         invertido += texto[i];
@@ -150,7 +152,7 @@ function invertirTexto(texto) {
 }
 let original = "Hola";
 let resultado = invertirTexto(original);
-console.log(resultado);  // Resultado: "aloH"
+console.log(resultado); */  // Resultado: "aloH"
 
 /* =================================== */
 
@@ -158,29 +160,101 @@ console.log(resultado);  // Resultado: "aloH"
 
 /* Ejericicos con while */
 //1
-let numeroInicial = 1;
+
+/* let numeroInicial = 1;
 
 while (numeroInicial <= 10){
     console.log(numeroInicial);
     numeroInicial++;
-}
+} */
+
 //2
-numeroInicial = 1;
+
+/* numeroInicial = 1;
 resultado = 0;
 
 while(numeroInicial <= 5){
     resultado = resultado + numeroInicial;
     numeroInicial++;
     console.log(resultado);
-}
+} */
+
+/* ================================= */
 
 /* Ejericicos con Do while */
 
 //1
-do {
+
+/* do {
     let datoUsuario = parseInt(prompt("Ingresa un número"));
     if (datoUsuario === 0) {
         break; //Se puede usar SWICH / BREAK/ FALSE para romper el ciclo.
     } 
 } while (true);
-alert("Lograste salir de la Matrix");
+alert("Lograste salir de la Matrix"); */
+
+//2
+
+/* let swich = true;
+
+do{
+  let contraseña = prompt("ingresa tu contraseña");
+
+  if (contraseña === "chanchito") {
+    swich = false;
+  }else{
+    swich = true;
+  }
+} while (swich);
+
+alert("Contraseña correcta"); */
+
+/*================================= */
+
+/* CICLO FOR */
+
+//1
+
+/* let cont = 5;
+
+for (let i = 0; i < 5; i++) {
+  console.log(cont);
+  numero--;
+}
+ */
+/* for (let i = 0; i < 5; i++) "AQUI SE CONTROLA LA CANTIDAD DE VUELTAS QUE SE DA EN BUCLE" 
+console.log(cont);  
+  numero--; "AQUI SE CONTROLA LA CANTIDAD QUE SE LE SUMA O SE LE RESTA"
+*/
+
+// Declaramos fuera del bloque
+/* let numero; 
+
+do {
+  numero = Number(prompt("Ingrese un número (se detiene si es negativo):"));
+} while (numero >= 0); */
+ // Repite mientras el número sea 0 o positivo
+
+
+/* Ejercicio de funciones */
+
+function saludar() {
+  console.log("Hola Amigos");
+}
+
+saludar();
+
+/* Ejemplo */
+
+function saludrNombre(nombre) {
+  console.log("hola como estas " + nombre + " Querido amigo");
+}
+saludrNombre("Edwin");
+
+/* Ejemplo con mas de 1 parametro */
+
+function sumarVariables(a, b, c) {
+  let resultado= 0;
+  resultado = a + b + c;
+  console.log(resultado);
+}
