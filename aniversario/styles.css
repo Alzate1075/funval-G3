@@ -59,24 +59,26 @@ p {
 }
 
 /* Botón rosado */
-.button,
 .boton-musica {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 15px 30px;
-  font-size: 1.2em;
-  background-color: #e91e63;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ff4d4d, #b30000);
   color: white;
-  border: none;
-  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 3px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   cursor: pointer;
-  text-decoration: none;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
 }
 
-.button:hover,
 .boton-musica:hover {
-  background-color: #ff4081;
+  transform: scale(1.1);
 }
 
 /* Video responsivo */

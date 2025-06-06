@@ -26,12 +26,12 @@
     <div class="fondo-oscuro"></div>
 
     <div class="contenido-principal">
-      <audio id="musicaFondo" loop autoplay>
-        <source src="./mp3-mp4/baladas_romanticas_mix.mp3" type="audio/mpeg" />
+      <audio id="musicaFondo" loop>
+        <source src="./mp3-mp4/BaladasRomanticasMix.mp3" type="audio/mpeg" />
         Tu navegador no soporta audio HTML5.
       </audio>
 
-      <button class="boton-musica">⏸️ Pausar Música</button>
+      <button id="botonMusica" class="boton-musica">▶️</button>
 
       <h1>Feliz Cuarto Aniversario, Mi Amor 💖</h1>
       <p>
@@ -195,47 +195,41 @@
       </section>
       <div>
         <h1>
-          <em
-            >"Nuestro amor está sellado para siempre. <br />Te amo hoy, mañana y
-            por la eternidad"</em
-          >
+          <em>
+            "Nuestro amor está sellado para siempre. <br />
+            Te amo hoy, mañana y por la eternidad"
+          </em>
         </h1>
       </div>
     </div>
+
     <script>
       window.onload = function () {
         const musica = document.getElementById("musicaFondo");
         const boton = document.querySelector(".boton-musica");
 
+        // Manejar botón de música
         boton.addEventListener("click", function () {
           if (musica.paused) {
             musica.play();
-            boton.textContent = "⏸️ Pausar Música";
+            boton.textContent = "⏸️";
           } else {
             musica.pause();
-            boton.textContent = "▶️ Reproducir Música";
-          }
-        });
-      };
-    </script>
-
-    <script>
-      window.onload = function () {
-        // Música
-        const musica = document.getElementById("musicaFondo");
-        const boton = document.querySelector(".boton-musica");
-
-        boton.addEventListener("click", function () {
-          if (musica.paused) {
-            musica.play();
-            boton.textContent = "⏸️ Pausar Música";
-          } else {
-            musica.pause();
-            boton.textContent = "▶️ Reproducir Música";
+            boton.textContent = "▶️";
           }
         });
 
-        // Detectar orientación de imagen y aplicar clase
+        // Iniciar música con la primera interacción del usuario
+        const iniciarMusica = () => {
+          musica.play().catch((e) => console.log("Audio bloqueado:", e));
+          document.removeEventListener("click", iniciarMusica);
+          document.removeEventListener("keydown", iniciarMusica);
+        };
+
+        document.addEventListener("click", iniciarMusica);
+        document.addEventListener("keydown", iniciarMusica);
+
+        // Detectar orientación de las imágenes
         document.querySelectorAll(".marco").forEach((marco) => {
           const img = marco.querySelector("img");
           if (img.complete) {
