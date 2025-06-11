@@ -533,11 +533,23 @@
   .h-80 {
     height: calc(var(--spacing) * 80);
   }
+  .h-90 {
+    height: calc(var(--spacing) * 90);
+  }
   .h-92 {
     height: calc(var(--spacing) * 92);
   }
+  .h-96 {
+    height: calc(var(--spacing) * 96);
+  }
+  .h-100 {
+    height: calc(var(--spacing) * 100);
+  }
   .h-110 {
     height: calc(var(--spacing) * 110);
+  }
+  .h-130 {
+    height: calc(var(--spacing) * 130);
   }
   .h-914 {
     height: calc(var(--spacing) * 914);
@@ -629,6 +641,9 @@
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
+  .w-9 {
+    width: calc(var(--spacing) * 9);
+  }
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
@@ -653,8 +668,23 @@
   .w-64 {
     width: calc(var(--spacing) * 64);
   }
+  .w-70 {
+    width: calc(var(--spacing) * 70);
+  }
+  .w-90 {
+    width: calc(var(--spacing) * 90);
+  }
+  .w-96 {
+    width: calc(var(--spacing) * 96);
+  }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
+  }
   .w-110 {
     width: calc(var(--spacing) * 110);
+  }
+  .w-130 {
+    width: calc(var(--spacing) * 130);
   }
   .w-\[10\%\] {
     width: 10%;
@@ -1008,6 +1038,9 @@
   .bg-amber-500 {
     background-color: var(--color-amber-500);
   }
+  .bg-amber-600 {
+    background-color: var(--color-amber-600);
+  }
   .bg-black {
     background-color: var(--color-black);
   }
@@ -1049,6 +1082,12 @@
   }
   .bg-gray-500 {
     background-color: var(--color-gray-500);
+  }
+  .bg-green-100 {
+    background-color: var(--color-green-100);
+  }
+  .bg-green-300 {
+    background-color: var(--color-green-300);
   }
   .bg-green-400 {
     background-color: var(--color-green-400);
@@ -1103,6 +1142,9 @@
   }
   .bg-yellow-600 {
     background-color: var(--color-yellow-600);
+  }
+  .bg-yellow-700 {
+    background-color: var(--color-yellow-700);
   }
   .bg-gradient-to-b {
     --tw-gradient-position: to bottom in oklab;
@@ -1184,6 +1226,9 @@
   }
   .p-8 {
     padding: calc(var(--spacing) * 8);
+  }
+  .p-10 {
+    padding: calc(var(--spacing) * 10);
   }
   .px-0 {
     padding-inline: calc(var(--spacing) * 0);
