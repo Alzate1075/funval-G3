@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./main.js" defer></script>
     <link rel="stylesheet" href="./output.css" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>INICIO MiniProyecto</title>
@@ -63,7 +64,7 @@
         </svg>
       </div>
     </header>
-
+    <hr class="border-t-2 border-[#04227e85] mt-1 md:border-t-4" />
     <main>
       <section
         class="Quienes-somos py-[40px] w-[90%] m-auto overflow-hidden align-center"
@@ -238,7 +239,7 @@
         </div>
         <div class="flex justify-center mt-6 m-4">
           <button
-            class="cursor-pointer text-2xl text-white bg-blue-700 hover:bg-blue-900 p-4 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+            class="cursor-pointer text-md text-white bg-blue-700 hover:bg-[#3A0CA3] p-2 rounded-lg transition-transform duration-300 hover:scale-105 outline-1 md:outline-2 outline-blue-800 outline-offset-2 md:outline-offset-4 md:text-2xl md:p-4 shadow-black shadow-lg"
           >
             Descargar CV 📜
           </button>
@@ -246,39 +247,41 @@
       </section>
     </main>
     <footer>
+      <hr class="border-t-2 border-[#3b2b8c] pb-1 md:border-t-4" />
       <div
-        class="footer-container bg-gradient-to-b from-[#3b2b8c] to-[#7265d7] text-white"
+        class="grid grid-cols-2 md:grid-cols-1 footer-container bg-gradient-to-b from-[#3b2b8c] to-[#7265d7] text-white"
       >
         <div
-          class="footer flex justify-around text-center text-1xl p-6 md:text-lg gap-4"
+          class="footer md:flex justify-around text-center text-sm p-6 md:text-3xl gap-4"
         >
           <div class="content-foo text-white">
             <h4>TELEFONO</h4>
-            <p class="text-yellow-400">(+57) 317 497 3545</p>
+            <p class="text-yellow-400 cursor-pointer">(+57) 317 497 3545</p>
           </div>
           <div class="content-foo text-white">
             <h4>EMAIL</h4>
-            <p class="text-yellow-400">codecraft@gmail.com</p>
+            <p class="text-yellow-400 cursor-pointer">codecraft@gmail.com</p>
           </div>
           <div class="content-foo text-white">
             <h4>DIRECCION</h4>
-            <p class="text-yellow-400">Avenida Siempre viva</p>
+            <p class="text-yellow-400 cursor-pointer">Avenida Siempre viva</p>
           </div>
         </div>
-        <div class="flex justify-center items-center gap-8">
-          <h2 class="http text-1xl text-white">
-            &copy; https://CodeCraft.com.co
-          </h2>
-
-          <div class="flex justify-end m-6">
+        <div
+          class="flex flex-col items-center justify-center gap-2 m-4 md:flex-row md:justify-center md:items-center md:gap-8"
+        >
+          <div class="flex justify-center md:justify-end m-6">
             <a href="#top" aria-label="Volver al inicio"
               ><button
-                class="cursor-pointer text-lg font-semibold text-white bg-red-600 text-center p-2 rounded-2xl shadow-lg hover:bg-green-600 transition-colors duration-300 hover:scale-105 px-4"
+                class="cursor-pointer text-lg font-semibold border-3 border-white text-white bg-red-600 text-center p-2 rounded-2xl shadow-lg hover:bg-orange-600 transition-colors duration-300 hover:scale-105 px-4 md:w-[150px]"
               >
                 INICIO
               </button></a
             >
           </div>
+          <h2 class="cursor-pointer http text-[12px] text-white md:text-2xl">
+            &copy; https://CodeCraft.com.co
+          </h2>
         </div>
       </div>
     </footer>
