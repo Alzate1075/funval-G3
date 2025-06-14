@@ -1,59 +1,60 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .Titulo {
-    background-color:#fffb00;
-    color: rgb(255, 0, 0);
-    border-radius: 8px;
-    border: 2px orangered;
-    display: flex;
-    justify-content: center;
-    margin: 20px 400px;
-    padding: 10px;    
+  background-color: #fffb00;
+  color: rgb(255, 0, 0);
+  border-radius: 8px;
+  border: 2px orangered;
+  display: flex;
+  justify-content: center;
+  margin: 20px 400px;
+  padding: 10px;
 }
 
-.practica  {
-    margin-left: 20px;
-    
+.practica {
+  margin-left: 20px;
 }
 
 .semana1 {
-
-    padding: 20px;
-    margin: 20px 10px 10px 10px;
-    border-color: black;
+  padding: 20px;
+  margin: 20px 10px 10px 10px;
+  border-color: black;
 }
 
 .Dia2 {
-    padding: 10px;
-    border-color: black;
-    background-color: rgb(168, 248, 248);
-    margin: 10px 10px 10px 10px;
-
+  padding: 10px;
+  border-color: black;
+  background-color: rgb(168, 248, 248);
+  margin: 10px 10px 10px 10px;
 }
 
 .Practica1 {
-    padding: 10px;
-    border-color: black;
-    background-color: aqua;
-    margin: 10px 10px 10px 10px;
-
+  padding: 10px;
+  border-color: black;
+  background-color: aqua;
+  margin: 10px 10px 10px 10px;
 }
 
 .Practica2 {
-    padding: 10px;
-    border-color: black;
-    background-color: rgb(69, 255, 215);
-    margin: 10px 10px 10px 10px;
-
+  padding: 10px;
+  border-color: black;
+  background-color: rgb(69, 255, 215);
+  margin: 10px 10px 10px 10px;
 }
 
 .Practica3 {
-    padding: 10px;
-    border-color: black;
-    background-color: rgb(34, 241, 144);
-    margin: 10px 10px 10px 10px;
+  padding: 10px;
+  border-color: black;
+  background-color: rgb(34, 241, 144);
+  margin: 10px 10px 10px 10px;
+}
 
+.mp {
+  padding: 10px;
+  border-color: black;
+  background-color: rgb(34, 241, 144);
+  margin: 10px 10px 10px 10px;
 }
