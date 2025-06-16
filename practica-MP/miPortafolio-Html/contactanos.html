@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../output.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contactanos</title>
+    <link
+      rel="shortcut icon"
+      href="../Jpg/Logos/CodeCraft/CodeCraftIcon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../miEstilo-Css/styles.css" />
+  </head>
+
+  <body>
+    <div id="app-root">
+      <div id="menu"></div>
+      <hr class="border-t-2 border-[#04227e85] mt-1 md:border-t-4" />
+
+      <main
+        class="flex flex-col justify-center items-center py-10 bg-gray-100 dark:bg-gray-900"
+      >
+        <!-- Formulario -->
+        <form
+          action="#"
+          method="POST"
+          class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-2xl w-full max-w-lg m-8"
+        >
+          <h2
+            class="text-3xl font-bold mb-6 text-center text-[#3b2b8c] dark:text-yellow-400"
+          >
+            Contáctanos
+          </h2>
+
+          <div class="mb-4">
+            <label
+              for="username"
+              class="block text-gray-700 dark:text-gray-200 font-semibold mb-2"
+              >Nombre de usuario</label
+            >
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Ingrese su usuario"
+              required
+              class="w-full p-3 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#7265d7]"
+            />
+          </div>
+
+          <div class="mb-4">
+            <label
+              for="email"
+              class="block text-gray-700 dark:text-gray-200 font-semibold mb-2"
+              >Correo</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Ingrese su correo"
+              required
+              class="w-full p-3 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#7265d7]"
+            />
+          </div>
+
+          <div class="mb-6">
+            <label
+              for="message"
+              class="block text-gray-700 dark:text-gray-200 font-semibold mb-2"
+              >Mensaje</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Mensaje"
+              required
+              class="w-full p-3 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#7265d7]"
+            ></textarea>
+          </div>
+
+          <div class="text-center">
+            <button
+              type="submit"
+              class="cursor-pointer bg-[#3b2b8c] dark:bg-yellow-400 text-white dark:text-gray-900 px-6 py-3 rounded-xl hover:bg-[#7265d7] dark:hover:bg-yellow-300 transition duration-300 hover:scale-105"
+            >
+              Enviar mensaje
+            </button>
+          </div>
+        </form>
+
+        <!-- Sección de redes sociales -->
+        <div class="m-4 flex gap-10 justify-center items-center">
+          <a
+            href="https://www.facebook.com/Alzate1075"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <img
+              src="../Jpg/Redes Sociales/Facebook.png"
+              alt="Facebook"
+              class="w-16 h-16 object-contain rounded-xl hover:scale-110 transition duration-300"
+            />
+          </a>
+          <a
+            href="https://www.tiktok.com/@artbeat.studios?is_from_webapp=1&sender_device=pc"
+            target="_blank"
+            aria-label="Tiktok"
+          >
+            <img
+              src="../Jpg/Redes Sociales/Tiktok.png"
+              alt="Tiktok"
+              class="w-16 h-16 object-contain rounded-xl hover:scale-110 transition duration-300"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/alzarte1075/?next=%2F"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <img
+              src="../Jpg/Redes Sociales/Instagram.png"
+              alt="Instagram"
+              class="w-16 h-16 object-contain rounded-xl hover:scale-110 transition duration-300"
+            />
+          </a>
+          <a
+            href="https://www.youtube.com/@edal905"
+            target="_blank"
+            aria-label="Youtube"
+          >
+            <img
+              src="../Jpg/Redes Sociales/Youtube.png"
+              alt="Youtube"
+              class="w-16 h-16 object-contain rounded-xl hover:scale-110 transition duration-300"
+            />
+          </a>
+        </div>
+      </main>
+      <div id="footer"></div>
+    </div>
+    <script src="../miArchivos-JS/componentes.js" defer></script>
+    <script src="../miArchivos-JS/contactanos.js" type="module" defer></script>
+  </body>
+</html>
