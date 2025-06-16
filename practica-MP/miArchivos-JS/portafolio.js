@@ -45,12 +45,9 @@ const portfolioData = [
     }
 ];
 
-/**
- * Genera y muestra el contenido de la sección de portafolio dinámicamente.
- * Crea tarjetas de proyecto a partir de los datos en 'portfolioData'.
- */
+
 function renderPortafolio() {
-    // HTML para el título y descripción de la página de portafolio
+ 
     const pageHeaderHtml = `
         <div class="text-center py-8">
             <h1 class="text-4xl font-extrabold text-[#3b2b8c] mb-4">MI PORTAFOLIO DE PROYECTOS</h1>
@@ -63,7 +60,6 @@ function renderPortafolio() {
         </div>
     `;
 
-    // Mapea el array de datos de proyectos a un string HTML para cada tarjeta.
     const portfolioItemsHtml = portfolioData.map(item => `
         <!--
             Contenedor flex para centrar la tarjeta dentro de su columna.
@@ -81,9 +77,8 @@ function renderPortafolio() {
                 <img src="${item.image}" alt="${item.alt}" class="w-full h-auto object-contain" />
             </a>
         </div>
-    `).join(''); // Une todos los strings HTML de las tarjetas en uno solo.
+    `).join(''); 
 
-    // Estructura completa de la sección de portafolio, incluyendo el título y la cuadrícula de proyectos.
     const portfolioSectionHtml = `
         ${pageHeaderHtml}
         <section class="grid grid-cols-1 md:grid-cols-2 gap-8 py-10 place-items-center mt-8 max-w-7xl mx-auto px-4">
@@ -91,11 +86,10 @@ function renderPortafolio() {
         </section>
     `;
 
-    // Obtiene el elemento donde se inyectará el contenido del portafolio.
-    // Es CRÍTICO que tu archivo 'portafolio.html' tenga un <div id="portfolio-content"> dentro de <main>.
+
     const portfolioContentElement = document.getElementById('portfolio-content');
 
-    // Inyecta el HTML generado en el elemento si existe.
+
     if (portfolioContentElement) {
         portfolioContentElement.innerHTML = portfolioSectionHtml;
     } else {
@@ -103,12 +97,10 @@ function renderPortafolio() {
     }
 }
 
-// Listener que se ejecuta cuando todo el DOM ha sido completamente cargado y parseado.
 document.addEventListener('DOMContentLoaded', () => {
-    // Forzar el scroll al principio de la página.
+
     window.scrollTo(0, 0);
 
-    // Obtener el contenedor principal de la aplicación para la transición de opacidad.
     const appRoot = document.getElementById('app-root');
 
     if (!appRoot) {
@@ -116,7 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    // Inyectar el Header y Footer usando las funciones de componentes.js
     const menuElement = document.getElementById('menu');
     if (menuElement) {
         menuElement.innerHTML = menuPrincipal();
@@ -131,9 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.warn("Elemento con ID 'footer' no encontrado para inyectar el Footer.");
     }
 
-    // Llama a la función para renderizar los proyectos del portafolio.
     renderPortafolio();
 
-    // Una vez que todo el contenido dinámico está en el DOM, hacer visible el contenedor principal.
     appRoot.classList.add('ready');
 });

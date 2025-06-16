@@ -3,9 +3,9 @@
  export function menuPrincipal() {
     const ruta = window.location.pathname;
 
-    let headerContent = '';
+    let headerMenu = '';
 
-    const baseNavAndWaveHtml = `
+    const menuInicio = `
         <nav class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-xl relative z-10 mt-6
                     sm:flex-nowrap sm:justify-center sm:gap-y-0
                     md:justify-start md:ml-6">
@@ -30,9 +30,9 @@
 
     if (ruta.includes('index.html')) {
     
-        headerContent = `
+        headerMenu = `
             <header class="bg-black text-white relative overflow-hidden h-[500px] flex flex-col">
-                ${baseNavAndWaveHtml}
+                ${menuInicio}
                 <div class="flex justify-center mt-8 relative z-10">
                     <img src="../Jpg/Logos/Titulos/CodeCraftLogo1.png" alt="CodeCraft" class="w-full max-w-xs sm:max-w-md md:max-w-lg h-auto object-contain" />
                 </div>
@@ -50,9 +50,9 @@
             tituloImagen = '../Jpg/Logos/Titulos/LogoContactanos.png';
         }
 
-        headerContent = `
+        headerMenu= `
             <header class="bg-black text-white overflow-hidden h-[500px] flex flex-col">
-                ${baseNavAndWaveHtml}
+                ${menuInicio}
                 <!-- Contenedor del Logo CodeCraft pequeño -->
                 <div class="flex flex-col items-center justify-center gap-4 mt-6 mb-4 relative z-10
                             md:flex-row">
@@ -67,7 +67,7 @@
         `;
     }
 
-    return headerContent; 
+    return headerMenu; 
 }
 
 export function footerPrincipal() {

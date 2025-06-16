@@ -33,13 +33,10 @@ const serviciosData = [{
     linkPage: "https://youtube.com/playlist?list=PLdOr2AHNhg_GugVFLkGyNf1aAZDECB4cW&si=GWo93b4Xa3CnHpCR" // Enlace para Músico
 }];
 
-/**
- * Genera y muestra el contenido de la sección de servicios dinámicamente.
- * Crea elementos visuales para cada servicio con su nombre, descripción y video/imagen circular.
- */
+
 function renderServicios() {
-    // Título principal y descripción de la página de servicios.
-    const serviciosPageHeaderHtml = `
+
+    const serviciosHeader = `
         <div class="text-center py-8">
             <h1 class="text-4xl font-extrabold text-[#3b2b8c] mb-4">¡Bienvenidos a mi página de servicios!</h1>
             <p class="text-lg text-gray-700 max-w-2xl mx-auto">
@@ -52,8 +49,7 @@ function renderServicios() {
         </div>
     `;
 
-    // Mapea el array de servicios a un string HTML para cada "tarjeta" de servicio,
-    // que ahora se enfoca en el círculo con video/imagen y texto.
+
     const serviciosItemsHtml = serviciosData.map(servicio => `
         <div class="service-item-wrapper">
             <!-- Título del servicio -->
@@ -82,11 +78,10 @@ function renderServicios() {
                 Ver Portafolio
             </a>
         </div>
-    `).join(''); // Une todos los strings HTML de los ítems en uno solo.
+    `).join(''); 
 
-    // HTML final para inyectar en el contenedor de servicios
     const finalContentHtml = `
-        ${serviciosPageHeaderHtml}
+        ${serviciosHeader}
         <div class="container mx-auto p-4 max-w-6xl">
             <!-- Cuadrícula responsiva para los elementos de servicio -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center mt-8">
@@ -95,7 +90,6 @@ function renderServicios() {
         </div>
     `;
 
-    // Obtiene el elemento donde se inyectará el contenido de servicios.
     const serviciosContentElement = document.getElementById('servicios-content');
 
     if (serviciosContentElement) {
@@ -105,12 +99,10 @@ function renderServicios() {
     }
 }
 
-// Listener que se ejecuta cuando todo el DOM ha sido completamente cargado y parseado.
 document.addEventListener('DOMContentLoaded', () => {
-    // Forzar el scroll al principio de la página.
+   
     window.scrollTo(0, 0);
 
-    // Obtener el contenedor principal de la aplicación para la transición de opacidad.
     const appRoot = document.getElementById('app-root');
 
     if (!appRoot) {
@@ -118,7 +110,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    // Inyectar el Header y Footer.
     const menuElement = document.getElementById('menu');
     if (menuElement) {
         menuElement.innerHTML = menuPrincipal();
@@ -133,9 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.warn("Elemento con ID 'footer' no encontrado para inyectar el Footer.");
     }
 
-    // Renderizar los servicios después de que el Header y Footer estén en su lugar.
     renderServicios();
 
-    // Una vez que todo el contenido dinámico está en el DOM, hacer visible el contenedor principal.
     appRoot.classList.add('ready');
 });
