@@ -1,0 +1,55 @@
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+/* ==============  Header =============== */
+
+header {
+  width: 100%;
+  height: 500px;
+  background: #0575e6;
+  background: -webkit-linear-gradient(
+      to right,
+      hsla(227, 97%, 24%, 0.705),
+      hsla(210, 96%, 46%, 0.671)
+    ),
+    url(../Jpg/Logos/CodeCraft/Fondo-Codecraft.png);
+  background: linear-gradient(
+      to right,
+      hsla(227, 97%, 24%, 0.705),
+      hsla(210, 96%, 46%, 0.589)
+    ),
+    url(../Jpg/Logos/CodeCraft/Fondo-Codecraft.png);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* ============================ */
+
+@keyframes llamaUV {
+  0% {
+    box-shadow: 0 0 20px 10px rgba(138, 43, 226, 0.4),
+      0 0 40px 20px rgba(255, 0, 255, 0.3), 0 0 60px 30px rgba(0, 255, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 30px 15px rgba(255, 0, 255, 0.6),
+      0 0 50px 25px rgba(138, 43, 226, 0.5),
+      0 0 70px 35px rgba(0, 255, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 20px 10px rgba(138, 43, 226, 0.4),
+      0 0 40px 20px rgba(255, 0, 255, 0.3), 0 0 60px 30px rgba(0, 255, 255, 0.2);
+  }
+}
+
+.llamas-uv {
+  animation: llamaUV 2.5s ease-in-out infinite;
+}

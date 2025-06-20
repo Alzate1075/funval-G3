@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../output.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CONTACTANOS MiniProyecto</title>
+    <link
+      rel="shortcut icon"
+      href="./Jpg/Logos/CodeCraft/CodeCraftIcon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../miEstilo-Css/styles.css" />
+  </head>
+
+  <body class="w-full h-full">
+    <header class="bg-position-center">
+      <nav
+        class="text-white p-4 text-xl flex flex-wrap justify-center md:justify-start"
+      >
+        <a
+          href="./index.html"
+          class="px-2 py-2 hover:underline hover:scale-110 transform transition duration-300 hover:text-yellow-300"
+          >Inicio</a
+        >
+        <a
+          href="./index-portafolio.html"
+          class="px-2 py-2 hover:underline hover:scale-110 transform transition duration-300 hover:text-yellow-300"
+          >Portafolio</a
+        >
+        <a
+          href="./index-servicios.html"
+          class="px-2 py-2 hover:underline hover:scale-110 transform transition duration-300 hover:text-yellow-300"
+          >Servicios</a
+        >
+        <a
+          href="./index-contactanos.html"
+          class="px-2 py-2 hover:underline hover:scale-110 transform transition duration-300 hover:text-yellow-300"
+          >Contáctanos</a
+        >
+      </nav>
+      <div
+        class="w-full flex justify-center md:justify-start items-center pt-2 mb-4 px-4"
+      >
+        <img
+          src="../Jpg/Logos/CodeCraft/CodeCraftLogo1.png"
+          alt="Logo CodeCraft"
+          class="w-24 sm:w-32 md:w-36 lg:w-40 h-auto md:ml-18"
+        />
+      </div>
+      <div>
+        <img
+          src="../Jpg/Logos/Titulos/LogoContactanos.png"
+          alt="Portafolio"
+          class="w-full max-w-xs sm:max-w-md md:max-w-lg h-auto object-contain mx-auto mt-8"
+        />
+      </div>
+      <!-- clase wave (Ola) -->
+      <div class="wave" style="height: 100px; overflow: hidden">
+        <svg
+          viewBox="0 0 500 150"
+          preserveAspectRatio="none"
+          style="height: 100%; width: 100%"
+        >
+          <path
+            d="M0.00,50.10 C150.00,150.33 349.20,-50.10 500.00,50.10 L500.00,150.33 L0.00,150.33 Z"
+            style="stroke: none; fill: hsla(0, 0%, 100%, 0.459)"
+          ></path>
+        </svg>
+      </div>
+    </header>
+    <hr class="border-t-2 border-[#04227e85] mt-1 md:border-t-4" />
+
+    <main
+      class="flex flex-col justify-center items-center py-10 bg-gray-100 dark:bg-gray-900"
+    >
+      <!-- Formulario -->
+      <form
+        action="#"
+        method="POST"
+        class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-2xl w-full max-w-lg m-8"
+      >
+        <h2
+          class="text-3xl font-bold mb-6 text-center text-[#3b2b8c] dark:text-yellow-400"
+        >
+          Contáctanos
+        </h2>
+
+        <div class="mb-4">
+          <label
+            for="username"
+            class="block text-gray-700 dark:text-gray-200 font-semibold mb-2"
+            >Nombre de usuario</label
+          >
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Ingrese su usuario"
+            required
+            class="w-full p-3 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#7265d7]"
+          />
+        </div>
+
+        <div class="mb-4">
+          <label
+            for="email"
+            class="block text-gray-700 dark:text-gray-200 font-semibold mb-2"
+            >Correo</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Ingrese su correo"
+            required
+            class="w-full p-3 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#7265d7]"
+          />
+        </div>
+
+        <div class="mb-6">
+          <label
+            for="message"
+            class="block text-gray-700 dark:text-gray-200 font-semibold mb-2"
+            >Mensaje</label
+          >
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Mensaje"
+            required
+            class="w-full p-3 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#7265d7]"
+          ></textarea>
+        </div>
+
+        <div class="text-center">
+          <button
+            type="submit"
+            class="cursor-pointer bg-[#3b2b8c] dark:bg-yellow-400 text-white dark:text-gray-900 px-6 py-3 rounded-xl hover:bg-[#7265d7] dark:hover:bg-yellow-300 transition duration-300 hover:scale-105"
+          >
+            Enviar mensaje
+          </button>
+        </div>
+      </form>
+
+      <!-- Sección de redes sociales -->
+      <div class="m-4 flex gap-10 justify-center items-center">
+        <a
+          href="https://www.facebook.com/Alzate1075"
+          target="_blank"
+          aria-label="Facebook"
+        >
+          <img
+            src="./Jpg/Redes Sociales/Facebook.png"
+            alt="Facebook"
+            class="w-16 h-16 object-contain rounded-xl hover:scale-110 transition duration-300"
+          />
+        </a>
+        <a
+          href="https://www.tiktok.com/@artbeat.studios?is_from_webapp=1&sender_device=pc"
+          target="_blank"
+          aria-label="Tiktok"
+        >
+          <img
+            src="./Jpg/Redes Sociales/Tiktok.png"
+            alt="Tiktok"
+            class="w-16 h-16 object-contain rounded-xl hover:scale-110 transition duration-300"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/alzarte1075/?next=%2F"
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <img
+            src="./Jpg/Redes Sociales/Instagram.png"
+            alt="Instagram"
+            class="w-16 h-16 object-contain rounded-xl hover:scale-110 transition duration-300"
+          />
+        </a>
+        <a
+          href="https://www.youtube.com/@edal905"
+          target="_blank"
+          aria-label="Youtube"
+        >
+          <img
+            src="./Jpg/Redes Sociales/Youtube.png"
+            alt="Youtube"
+            class="w-16 h-16 object-contain rounded-xl hover:scale-110 transition duration-300"
+          />
+        </a>
+      </div>
+    </main>
+    <footer>
+      <hr class="border-t-2 border-[#3b2b8c] pb-1 md:border-t-4" />
+      <div
+        class="grid grid-cols-2 md:grid-cols-1 footer-container bg-gradient-to-b from-[#3b2b8c] to-[#7265d7] text-white"
+      >
+        <div
+          class="footer md:flex justify-around text-center text-sm p-6 md:text-3xl gap-4"
+        >
+          <div class="content-foo text-white">
+            <h4>TELEFONO</h4>
+            <p class="text-yellow-400 cursor-pointer">(+57) 317 497 3545</p>
+          </div>
+          <div class="content-foo text-white">
+            <h4>EMAIL</h4>
+            <p class="text-yellow-400 cursor-pointer">codecraft@gmail.com</p>
+          </div>
+          <div class="content-foo text-white">
+            <h4>DIRECCION</h4>
+            <p class="text-yellow-400 cursor-pointer">Avenida Siempre viva</p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center gap-2 m-4 md:flex-row md:justify-center md:items-center md:gap-8"
+        >
+          <div class="flex justify-center md:justify-end m-6">
+            <a href="#top" aria-label="Volver al inicio"
+              ><button
+                class="cursor-pointer text-lg font-semibold border-3 border-white text-white bg-red-600 text-center p-2 rounded-2xl shadow-lg hover:bg-orange-600 transition-colors duration-300 hover:scale-105 px-4 md:w-[150px]"
+              >
+                INICIO
+              </button></a
+            >
+          </div>
+          <h2 class="cursor-pointer http text-[12px] text-white md:text-2xl">
+            &copy; https://CodeCraft.com.co
+          </h2>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

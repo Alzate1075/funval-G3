@@ -10,7 +10,7 @@ let isPauseGame = false
 let isGameStart = false
 
 // Array of win conditions
-const inputCells = ['', '', '',
+const inputCaja = ['', '', '',
                     '', '', '',
                     '', '', '']
 
@@ -22,7 +22,7 @@ const winConditions = [
 ]
 
 // Add click event listeners to each cell
-cells.forEach((cell, index) => {
+caja.forEach((cell, index) => {
     cell.addEventListener('click', () => tapCell(cell, index))
 })
 

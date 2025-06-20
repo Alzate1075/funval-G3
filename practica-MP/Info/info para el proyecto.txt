@@ -1,3 +1,0 @@
-
-Simulaciones de carga - spinner - skeleton
-setimeout
