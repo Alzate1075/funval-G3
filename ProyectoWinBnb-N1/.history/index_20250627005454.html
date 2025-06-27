@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./src/Jpg/icons/triangulogo.png"
+      type="image/x-icon"
+    />
+
+    <title>edWindBnb pf</title>
+  </head>
+
+  <body class="screen-full bg-[#ffffff]">
+    <!-- Spinner Oculto -->
+    <div
+      id="spinner"
+      class="hidden fixed top-0 left-0 w-full h-full bg-white flex- items-center justify-center z-30 gap-4"
+    >
+      <div
+        class="animate-spin rounded-full h-20 w-20 border-4 border-[#ef7979] border-t-transparent gap-4"
+      ></div>
+      <p class="text-center text-2xl text-[#ef7979] font-bold">
+        Loading hotels.
+      </p>
+    </div>
+
+    <!-- HEADER -->
+    <header id="cabecera" class="mx-6 pt-6 z-40 pb-4">
+      <!-- Buscador y Logo -->
+      <div
+        class="flex flex-col items-center gap-4 md:flex-row md:justify-between md:items-center"
+      >
+        <div id="logoWind">
+          <img
+            src="./src/Jpg/icons/logo2.png"
+            class="w-[120px] md:w-[170px] md:ml-5"
+          />
+        </div>
+        <!-- BUSCADOR -->
+        <div
+          id="abrirModal"
+          class="flex items-center justify-center border border-gray-50 cursor-pointer text-[12px] md:text-base rounded-2xl shadow-md bg-white py-3 md:py-4 md:mt-4 md:mr-5 hover:shadow-lg"
+        >
+          <div class="border-r border-gray-100 text-gray-800 pl-5 pr-5">
+            Where do you travel?
+          </div>
+          <div class="border-r border-gray-100 text-gray-400 pl-5 pr-5">
+            Add guests
+          </div>
+          <div>
+            <button class="pl-5 pr-5">
+              <img
+                src="./src/Jpg/icons/search.svg"
+                alt=""
+                class="text-[#ef7979] cursor-pointer h-4 w-4 md:h-5 md:w-5"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- TITULO STAYS -->
+    <div
+      id="tituloStays"
+      class="flex items-center justify-between pt-4 md:mb-4 mx-12"
+    >
+      <div class="text-2xl md:text-4xl font-montserrat font-bold text-black">
+        <h1>Stays in Finland</h1>
+      </div>
+      <h2 class="font-montserrat">14 Stays</h2>
+    </div>
+    <!-- MAIN -->
+
+    <main class="p-4 md:p-8">
+      <!-- CARDS -->
+      <section
+        id="contenedor-cards"
+        class="cursor-pointer grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
+      ></section>
+    </main>
+    <!-- MODAL -->
+    <div
+      id="buscadorModal"
+      class="fixed inset-0 z-50 hidden backdrop-brightness-50 items-start justify-center transition"
+    >
+      <button
+        id="closeModal"
+        class="absolute top-5 right-4 text-gray-900 hover:text-[#ef7979] text-xl font-bold z-50"
+      >
+        &times;
+      </button>
+      <div
+        id="modalInter"
+        class="flex justify-center bg-white h-[70%] w-full md:h-[70%] relative"
+      >
+        <!-- INPUT - MODAL -->
+
+        <div
+          class="w-[90%] h-[40%] md:h-[70px] flex flex-col md:flex-row items-center md:justify-between text-[12px] md:text-base rounded-2xl shadow-md bg-white hover:shadow-lg border border-gray-100 m-5 md:mt-15 mt-20"
+        >
+          <!-- Botones local-Guest -->
+          <div
+            class="w-[80%] h-[40%] md:h-[70px] flex flex-col md:flex-row items-center justify-center md:justify-between text-[12px] md:text-base md:mt-15 mt-5 md:mb-15"
+          >
+            <button
+              id="openModal"
+              class="cursor-pointer w-full md:w-[70%] h-auto flex flex-col mb-2 ml-10 mt-10 md:m-6"
+            >
+              <p class="text-md md:text-[10px] font-bold">LOCATION</p>
+              <input
+                id="locationInput"
+                type="text"
+                placeholder="Where do you travel?"
+                class="text-md text-gray-400 outline-none focus:outline-none w-[40%]"
+                autocomplete="off"
+              />
+            </button>
+            <button
+              id="opModal"
+              class="cursor-pointer w-full md:w-[70%] h-auto flex flex-col justify-end md:justify-between md:border-r md:border-gray-100 ml-10 mt-4 md:mt-0"
+            >
+              <p class="text-md md:text-[10px] font-bold text-black">GUESTS</p>
+              <p class="text-20 text-gray-400">Add guests</p>
+            </button>
+          </div>
+          <!-- Boton Search -->
+          <button
+            id="search"
+            class="bg-[#ef7979] py-3 px-6 gap-2 rounded-2xl flex items-center justify-center cursor-pointer mt-40 md:mt-0 mx-auto md:mx-0 w-auto md:mr-4 border border-gray-100 shadow-md"
+          >
+            <img
+              src="./src/Jpg/icons/search.svg"
+              alt="Search"
+              class="text-white h-4 w-4 md:h-5 md:w-5"
+            />
+            <p class="text-[16px] md:text-lg text-white">Search</p>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Border hover -->
+    <!-- <div
+      class="w-[40%] h-[40%] md:h-[35px] border border-transparent hover:border hover:border-black rounded-2xl transition"
+    >
+      hola mundo
+    </div> -->
+    <!-- ========================== -->
+    <!-- MODAL LOCATION -->
+    <section
+      id="locationModal"
+      class="fixed inset-0 z-50 hidden items-start justify-center transition"
+    >
+      <button
+        id="modalClose"
+        class="absolute top-5 right-4 text-gray-900 hover:text-[#ef7979] text-xl font-bold z-50"
+      >
+        &times;
+      </button>
+      <div
+        id="modalInterno"
+        class="flex items-center justify-center ml-20 md:mt-40 bg-white h-[70%] md:w-[30%] md:h-[70%] relative border-4 border-gray-100 shadow-2xl"
+      >
+        <p class="m-auto text-xl font-semibold text-gray-600">contenido</p>
+      </div>
+    </section>
+
+    <!-- ========================== -->
+    <!-- MODAL GUESTS -->
+
+    <section
+      id="guestsModal"
+      class="fixed inset-0 z-50 hidden items-start justify-center transition"
+    >
+      <button
+        id="modalCl"
+        class="absolute top-5 right-4 text-gray-900 hover:text-[#ef7979] text-xl font-bold z-50"
+      >
+        &times;
+      </button>
+      <div
+        id="modalInt"
+        class="flex items-center justify-start md:mt-40 bg-white h-[70%] md:w-[30%] md:h-[70%] relative border-4 border-gray-100 shadow-2xl"
+      >
+        <p class="m-auto text-xl font-semibold text-gray-600">
+          contador guests
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================== -->
+    <!-- SCRIPT -->
+    <script type="module" src="./src/scripts/main.js" defer></script>
+  </body>
+</html>
