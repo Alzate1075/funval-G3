@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <header id="header">
+        <div class="jugador bordeX" id="opcionX" onclick="opcionX('X')">X</div>
+        <h2 id="titulo">TICTAC TOE</h2>
+        <div class="jugador borderO" id="opcionO" onclick="opcionO('O')">O</div>
+      </header>
+
+      <div id="cajaOX">
+        <div class="caja"></div>
+        <div class="caja"></div>
+        <div class="caja"></div>
+        <div class="caja"></div>
+        <div class="caja"></div>
+        <div class="caja"></div>
+        <div class="caja"></div>
+        <div class="caja"></div>
+        <div class="caja"></div>
+      </div>
+      <div id="botonJugadores">
+        <button id="jugadorX">JUGADOR (X)</button>
+        <button id="jugadorO">JUGADOR (O)</button>
+      </div>
+      <button id="reinicio">REINICIAR</button>
+    </main>
+  </body>
+</html>

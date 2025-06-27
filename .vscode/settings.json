@@ -8,5 +8,6 @@
         "Crue",
         "Leppard",
         "tailwindcss"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
